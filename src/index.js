@@ -1,20 +1,14 @@
-// Importer React
+
 import React from 'react';
-
-// Importer ReactDOM
 import ReactDOM from 'react-dom';
-
-// Importer le composant App
 import App from './App';
-
-// Importer le BrowserRouter
 import { BrowserRouter } from 'react-router-dom';
+import"./sass/main.scss";
 
-// Rendre le composant App enveloppé par le BrowserRouter
-ReactDOM.render(
-  <BrowserRouter>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
     <App />
-  </BrowserRouter>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 

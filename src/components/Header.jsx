@@ -3,27 +3,31 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import logo from './images/logo.png';
+import logo from '../images/logo.png';
 
 
-const Navbar = () => {
+function Header() {
   return (
     
-    <nav className="navbar">
-      {/* Afficher le logo */}
-      <img src={logo} alt="Logo" className="logo" />
-      {/* Créer une liste de liens */}
-      <ul className="menu">
-        <li>
-          <Link to="/">Accueil</Link>
-        </li>
-        <li>
-          <Link to="/about">À propos</Link>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <div>
+        <NavLink to="/kasa">
+          <img src={logo} alt="Logo Kasa" />
+        </NavLink>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/kasa">Accueil</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">A Propos</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
-};
+}
 
+export default Header;
 
-export default Navbar;
