@@ -1,18 +1,20 @@
+@use '../var/variables' as *;
+
 header {
     display: flex;
-    max-width: $max-screen-lg;
+    
     padding: 45px 20px 50px 20px;
     align-self: center;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-  
+    max-width: $max-screen-lg;
     nav {
       ul {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-        gap: 50px;
+        gap: 55px;
       }
   
       li {

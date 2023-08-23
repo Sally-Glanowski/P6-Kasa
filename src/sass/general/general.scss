@@ -1,0 +1,17 @@
+@use '../var/variables' as *;
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  main {
+    max-width: $max-screen-lg;
+    align-self: center;
+    width: 100%;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
