@@ -1,0 +1,18 @@
+/* Desktop */
+
+:root {
+    --small: 18px;
+    --medium: 24px;
+    --large: 36px;
+    --extralarge: 48px;
+  }
+  
+  /* Mobile */
+  
+  @media (max-width: 767.98px) {
+    :root {
+      --medium: 13px;
+      --large: 18px;
+      --extralarge: 24px;
+    }
+  }
