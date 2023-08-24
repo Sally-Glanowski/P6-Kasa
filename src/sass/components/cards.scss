@@ -1,0 +1,34 @@
+@use '../var/variables' as *;
+
+.card {
+    background: $saumon;
+     max-width:340px;
+    height: 340px;
+    border-radius: 10px;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    h2 {
+      font-size: var(--small);
+      font-weight: 500;
+      max-width: 90%;
+      position:absolute;
+      bottom: 80px;
+      left: 20px;
+      color: white;
+      text-shadow: 2px 2px 2px #000000;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .card {
+      height: 255px;
+      max-width: 90%;
+  
+    }
+  }
+  

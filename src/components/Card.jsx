@@ -5,8 +5,8 @@ function Card({ logement }) {
   const { id, cover, title } = logement;
 
   return (
-    <article key>
-      <Link to={`logement/${id}`}>
+    <article key={id}>
+      <Link to={`/logementssfsdgq/${id}`}>
         <figure className="card">
           <img src={cover} alt={title} />
           <figcaption>
@@ -15,7 +15,7 @@ function Card({ logement }) {
         </figure>
       </Link>
     </article>
-  )
+  );
 }
 
 export default Card;
