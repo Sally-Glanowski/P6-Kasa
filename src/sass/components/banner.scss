@@ -1,0 +1,27 @@
+@use '../general/typo' as *;
+
+.banner {
+    height: 223px;
+    position: relative;
+}
+
+.banner-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(68%);
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    font-size: var(--extralarge);
+    font-weight: 500;
+    top:50px;
+    font-family: Montserrat;
+    line-height: 68px;
+    letter-spacing: 0em; 
+  }
