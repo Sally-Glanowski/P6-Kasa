@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Logement from "./pages/Logement";
 import PageNotFound from "./pages/PageNotFound";
 
-function ConfigRoutes() {
+function RoutesConfig() {
   return (
     <Routes>
       <Route path="/kasa" element={<Home />} />
@@ -15,4 +15,4 @@ function ConfigRoutes() {
   );
 }
 
-export default ConfigRoutes;
+export default RoutesConfig;

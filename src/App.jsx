@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import ConfigRoutes from "./RoutesConfig"
+import RoutesConfig from "./RoutesConfig"
 import Header from "./components/Header";
 import Footer from "./components/Footer"; 
 
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <main>
-            <ConfigRoutes/>
+            <RoutesConfig/>
         </main>
         <Footer />
       </BrowserRouter>
