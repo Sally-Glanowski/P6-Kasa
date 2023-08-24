@@ -1,3 +1,5 @@
+@use '../var/variables' as *;
+
 .page-404{
     display:flex;
     align-items: center;
@@ -6,6 +8,14 @@
     margin-top: 80px;
 
     span{
-        color:$saumon;
+        color: $saumon;
+        font-size: 270px;
+        font-weight: 700;
+        font-family: Montserrat;
     }
+
+    p{
+        line-height: 51.34px;
+    }
+
 }
