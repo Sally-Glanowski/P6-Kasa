@@ -14,7 +14,7 @@ function Home() {
       try {
         await new Promise((resolve) => setTimeout(resolve, 1000));
         const response = await axios.get(
-          process.env.PUBLIC_URL + "/liste-cards.json"
+          process.env.PUBLIC_URL + "/logements"
         );
         setLogements(response.data);
         setDataLoading(false);
@@ -37,7 +37,7 @@ function Home() {
         {isDataLoading ? (
           <Loader />
         ) : (
-          liste-cards.map((logement) => (
+          logements.map((logement) => (
             <Card key={logement.id} logement={logement} />
           ))
         )}

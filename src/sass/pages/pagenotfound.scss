@@ -15,7 +15,33 @@
     }
 
     p{
-        line-height: 51.34px;
+        font-family: Montserrat;
+        font-size: var(--large);
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $saumon;
+
     }
 
+    a{
+        color: $saumon;
+        font-weight: 500;
+        font-size: var(--small);
+        margin-bottom: 20px;
+    }
 }
+
+@media (max-width: 767.98px) {
+    .page-404 {
+      
+      span {
+        font-size: 96px;
+      }
+  
+      a {
+        font-size: 14px;
+      }
+    }
+  }
