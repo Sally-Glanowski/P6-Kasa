@@ -12,7 +12,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve,1000 ));
         const response = await axios.get(
           process.env.PUBLIC_URL + "/logements.json"
         );
