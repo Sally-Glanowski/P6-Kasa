@@ -1,0 +1,35 @@
+@use '../var/variables' as *;
+
+.logements{
+    display:flex;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: center;
+    background-color: $grisClair;
+    margin: 50px 0;
+    padding: 55px 0 45px;
+    border-radius: 25px;
+
+
+a{
+    text-decoration: none; 
+    }
+}
+
+@media (max-width: 767.98px) {
+    .logements {
+      background-color: white;
+      margin:0;
+      padding:0;
+      margin-bottom: 22px;
+      gap:22px;
+      
+      
+      
+
+      article {
+        width: 100%;
+        
+      }
+    }
+  }

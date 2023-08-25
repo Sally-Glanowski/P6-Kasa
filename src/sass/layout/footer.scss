@@ -1,3 +1,5 @@
+@use '../var/variables' as *;
+
 .footer {
     display: flex;
     height: 209px;
@@ -13,11 +15,10 @@
     img{
       width: 122px;
       height: 39.5px;
-
-
     }
   
     span {
+      font-family: Montserrat;
       color: white;
       font-size: var(--medium);
       font-weight: 400;

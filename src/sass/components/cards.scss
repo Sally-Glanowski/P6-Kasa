@@ -14,8 +14,6 @@
         transform: scale(1.08);
         opacity: 0.8;
       }
-
-      
   
     img {
       width: 100%;
@@ -25,8 +23,9 @@
     }
   
     h2 {
+      font-family: Montserrat;
       font-size: var(--small);
-      font-weight: 500;
+      font-weight: 70;
       max-width: 90%;
       position:relative;
       bottom: 80px;
@@ -40,6 +39,8 @@
     .card {
       height: 255px;
       max-width: 90%;
+      margin-left: 23px;
+      
   
     }
   }
