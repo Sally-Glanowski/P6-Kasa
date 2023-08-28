@@ -1,0 +1,37 @@
+@use '../var/variables' as *;
+@use '../general/typo' as *;
+
+.collapse {
+    max-width: 1024px;
+    width: 100%;
+  
+    .encadre-collapse h3 {
+      color: white;
+      background: $saumon;
+      font-size: var(--small);
+      margin: 0;
+      border-radius: 5px;
+      font-weight: 400;
+      padding: 20px;
+    }
+  }
+  
+  .reglement {
+    background-color: $grisFonce;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    
+  
+    h3 {
+      font-size: var(--medium);
+      margin: 0;
+      font-weight: 500;
+      background-color: $saumon;
+    }
+  
+   
+  
+  }

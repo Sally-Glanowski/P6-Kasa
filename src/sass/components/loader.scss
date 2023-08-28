@@ -1,0 +1,21 @@
+@use '../var/variables' as *;
+
+.loader {
+    padding: 10px;
+    border: 7px solid $saumon;
+    border-bottom-color: transparent;
+    border-radius: 22px;
+    animation: rotate 1s infinite linear;
+    
+    margin: 0 auto;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
