@@ -4,7 +4,7 @@
 .collapse {
   max-width: 1024px;
   width: 90%;
-  margin-left:17%;
+  margin-left:10%;
   margin-right: 10%;
     
   
@@ -17,7 +17,7 @@
       font-family: Montserrat;
       font-weight: 400;
       padding: 10px;
-      width: 90%;
+      width: 100%;
        
     }
 
@@ -34,7 +34,7 @@
     cursor: pointer;
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
-    width: 90%;
+    width: 100%;
     font-family: Montserrat;
     font-size: var(small);
     font-weight: 400;
@@ -48,11 +48,11 @@
     height: 11px;
     transform: rotate(0deg);
     position: absolute;
-    top: 50%; /* Utilisez 50% pour centrer verticalement */
-    left: 86%; /* Utilisez des marges droites pour l'espacement */
-    transform: translateY(-50%); /* Ajustez la position verticale */
+    top: 50%;
+    left: 97%; 
+    transform: translateY(-50%);
   }
-  .fleche.open {
+  .fleche.open img {
     transform: rotate(180deg);
   }
   
