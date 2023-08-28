@@ -7,7 +7,7 @@ function Carrousel({ images }) {
   const imageSize = () => {
     const carrouselImage = carrouselImageRef.current;
 
-    if (carrouselImage) {
+    if (!carrouselImage) {
       return 0;
     }
 
@@ -22,7 +22,7 @@ function Carrousel({ images }) {
 
   function nextImage() {
     setCurrentImageIndex((currentIndex) =>
-      currentIndex === images.length - 1 ? : currentIndex + 1
+      currentIndex === images.length - 1 ? 0 : currentIndex + 1
     );
   }
 
