@@ -2,8 +2,11 @@
 @use '../general/typo' as *;
 
 .collapse {
-    max-width: 1024px;
-    width: 100%;
+  max-width: 1024px;
+  width: 90%;
+  margin-left:17%;
+  margin-right: 10%;
+    
   
     .encadre-collapse h3 {
       color: white;
@@ -11,27 +14,53 @@
       font-size: var(--small);
       margin: 0;
       border-radius: 5px;
+      font-family: Montserrat;
       font-weight: 400;
-      padding: 20px;
+      padding: 10px;
+      width: 90%;
+       
     }
-  }
+
+        .encadre-collapse{
+            position: relative;
+        }
+    
+  
   
   .reglement {
-    background-color: $grisFonce;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: black;
+    
+    background-color: $gris;
+    color: $saumon;
     cursor: pointer;
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
+    width: 90%;
+    font-family: Montserrat;
+    font-size: var(small);
+    font-weight: 400;
+}
+
+.arrow  img{
+    color: black;
+    width: 20px; 
+    height: 20px; 
+    transform: rotate(0deg); 
+    position:absolute;
+  }
+  
+  .arrow.open img{
+    transform: rotate(180deg); 
+  
+  }
+}
+    
+      
+      
+         
     
   
-    h3 {
-      font-size: var(--medium);
-      margin: 0;
-      font-weight: 500;
-      background-color: $saumon;
-    }
+    
+    
   
    
   
-  }
