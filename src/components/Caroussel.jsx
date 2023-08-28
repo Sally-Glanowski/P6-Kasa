@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 
-function Carrousel({ images }) {
+function Caroussel({ images }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const carrouselImageRef = useRef(null);
 
@@ -66,4 +66,4 @@ function Carrousel({ images }) {
   );
 }
 
-export default Carrousel;
+export default Caroussel;
