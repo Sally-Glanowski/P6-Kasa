@@ -7,10 +7,7 @@ function Caroussel({ images }) {
   const imageSize = () => {
     const carrouselImage = carrouselImageRef.current;
 
-    if (!carrouselImage) {
-      return 0;
-    }
-
+    if (!carrouselImage) return 0;
     return carrouselImage.width;
   };
 
@@ -26,21 +23,14 @@ function Caroussel({ images }) {
     );
   }
 
-  if (images.length === 1) {
-    return (
-      <div className="carrousel">
-        <img className="carrousel-image" src={images[0]} alt="Logement" />
-      </div>
-    );
-  }
+  const singleImage = images.length === 1;
 
   return (
     <div className="carrousel">
       <div
         className="carrousel-container"
-        style={{
-          transform: `translateX(-${currentImageIndex * imageSize()}px)`,
-        }}>
+        style={{ transform: `translateX(-${currentImageIndex * imageSize()}px)` }}
+      >
         {images.map((image, index) => (
           <img
             className="carrousel-image"
@@ -52,15 +42,19 @@ function Caroussel({ images }) {
         ))}
       </div>
       <div className="carrousel-navigation">
-        <button className="carrousel-button" onClick={previousImage}>
-          &lt;
-        </button>
-        <span className="carrousel-counter">{`${currentImageIndex + 1} / ${
-          images.length
-        }`}</span>
-        <button className="carrousel-button" onClick={nextImage}>
-          &gt;
-        </button>
+        {!singleImage && (
+          <button className="carrousel-button" onClick={previousImage}>
+            &lt;
+          </button>
+        )}
+        <span className="carrousel-counter">
+          {`${currentImageIndex + 1} / ${images.length}`}
+        </span>
+        {!singleImage && (
+          <button className="carrousel-button" onClick={nextImage}>
+            &gt;
+          </button>
+        )}
       </div>
     </div>
   );
