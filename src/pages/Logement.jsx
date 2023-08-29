@@ -16,12 +16,12 @@ function Logement() {
   useEffect(() => {
     const fetchLogement = async () => {
       try {
-        await new Promise((resolve) => setTimeout(resolve 1000));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
         const response = await axios.get(
           process.env.PUBLIC_URL + "/logements.json"
         );
         const logementData = response.data.find(
-          (logement) => logement.id == logementId
+          (logement) => logement.id === logementId
         );
         if (logementData) {
           setLogement(logementData);
@@ -37,3 +37,37 @@ function Logement() {
     fetchLogement();
   }, []);
 
+  if (isDataLoading || !logement) {
+    return <Loader />;
+  }
+
+  return (
+    <section className="logement">
+      <Carrousel images={logement.pictures} />
+      <div className="logement-title">
+        <div>
+          <h2>{logement.title}</h2>
+          <p>{logement.location}</p>
+        </div>
+        <div className="host">
+          <p>{logement.host.name}</p>
+          <img src={logement.host.picture} alt={logement.host.name}></img>
+        </div>
+      </div>
+      <div className="tags-and-rating">
+        <div className="tags-container">
+          {logement.tags.map((tag) => (
+            <Tag key={tag} tagName={tag} />
+          ))}
+        </div>
+        <Rating rating={logement.rating} />
+      </div>
+      <div className="logement-collapses">
+        <Collapse title="Description" content={logement.description} />
+        <Collapse title="Équipements" content={logement.equipments} />
+      </div>
+    </section>
+  );
+}
+
+export default Logement;
