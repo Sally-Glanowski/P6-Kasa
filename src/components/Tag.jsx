@@ -2,7 +2,7 @@ import React from "react";
 
  function Tag({ tagName }) {
   return (
-    <div class="tag">
+    <div className="tag">
       <span className="tag-name">{tagName}</span>
     </div>
   );
