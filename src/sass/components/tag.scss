@@ -1,0 +1,24 @@
+@use '../var/variables' as *;
+
+.tag {
+    border-radius: 10px;
+    background: $saumon;
+    text-align: center;
+    padding: 5px 10px
+    
+  
+    span {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .tag {
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+  
