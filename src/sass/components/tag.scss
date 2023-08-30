@@ -4,13 +4,15 @@
     border-radius: 10px;
     background: $saumon;
     text-align: center;
-    padding: 5px 10px
+    padding: 5px 10px;
+    flex-shrink: 0;
+    
     
   
     span {
       color: #fff;
       font-size: 14px;
-      font-weight: 500
+      font-weight: 500;
     }
   }
   
