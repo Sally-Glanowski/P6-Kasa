@@ -1,135 +1,138 @@
 @use '../var/variables' as *;
+@use '../general/typo' as *;
 
 .logement{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 100%;
-  
-    p{
-      margin: 0;
-      font-size: var(--small);
-      font-weight: 400;
-      color: $saumon;
-    }
-    .carrousel img{
-      max-height: 415px;
-      object-fit: cover;
-      filter: brightness(70%);
-      flex-shrink: 0;
-      max-width: $max-screen-lg;
-      width: 100%;
-    }
-  
-    h2{
-      color: $saumon;
-      font-weight: 400;
-      margin: 0;
-      font-size: var(--large);
-    }
-  
-    .logement-collapses{
-      display: flex;
-      gap: 70px;
-      margin-bottom: 40px;
-  
-      .collapse-header{
-        border-radius: 10px;
-      }
-  
-      .collapse-content ul{
-        background: $gris;
-        padding: 20px;
-        margin: 0;
-        border-radius: 5px;
-  
-        li{
-          color: $saumon;
-          font-size: var(--small)
-        }
-      }
-    }
-  
-    .logement-title{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  
-      .host{
-        display: flex;
-        gap: 10px;
-        
-  
-        p{
-          max-width: 100px;
-          text-align: right;
-          margin: 0;
-        }
-  
-        img{
-          width: 70px;
-          height: 70px;
-          border-radius: 64px;
-          background: $gris;
-        }
-      }
-    }
-  
-    .tags-container{
-        display: flex;
-        gap: 10px;
-        margin-bottom: 18px
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
 
-      }.tags-and-rating{
-      display: flex;
-      justify-content: space-between;
-  
-      
+  p{
+    margin: 0;
+    font-size: var(--small);
+    font-weight: 400;
+    color: $saumon;
+    font-family: Montserrat;
+  }
+  .caroussel img{
+    max-height: 415px;
+    object-fit: cover;
+    filter: brightness(75%);
+    flex-shrink: 0;
+    max-width: $max-screen-lg;
+    width: 100%;
+  }
+
+  h2{
+    color: $saumon;
+    font-weight: 400;
+    margin: 0;
+    font-size: var(--large);
+    font-family: Montserrat;
+  }
+
+  .logement-collapses{
+    display: flex;
+    gap: 70px;
+    margin-bottom: 40px;
+
+    .collapse-header{
+      border-radius: 10px;
+    }
+
+    .collapse-content ul{
+      padding: 20px;
+      margin: 0;
+      background: $grisClair;
+      border-radius: 5px;
+
+      li{
+        color: $saumon;
+        font-size: var(--small);
+      }
     }
   }
-  
-  @media (max-width: 767.98px) {
-    .logement {
-      h2{
-        margin-bottom: 15px;
+
+  .logement-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .host{
+      display: flex;
+      gap: 10px;
+      align-self: baseline;
+
+      p{
+        max-width: 100px;
+        text-align: right;
+        margin: 0;
+        align-self: center;
       }
-      .host p{
-        font-size: 12px;
-      }
-      .star{
-        width: 18px;
-      }
-      .tags-and-rating{
-        display: inline;
-      } 
-      p {
-        font-size: 14px;
+
+      img{
+        width: 64px;
+        height: 64px;
+        border-radius: 64px;
+        background: $grisFonce;
       }
     }
-  
-    .collapse .collapse-content p{
+  }
+
+  .tags-and-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .tags-container{
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 767.98px){
+  .logement{
+    h2{
+      margin-bottom: 15px;
+    }
+    .host p{
+      font-size: 12px;
+    }
+    .star{
+      width: 18px;
+    }
+    .tags-and-rating{
+      display: inline;
+    }
+    p{
       font-size: 14px;
     }
-  
-    .logement .logement-collapses{
-      flex-directio: column;
-      gap: 20px;
-      margin-bottom: 27px;
-      .collapse-content ul li{
-        font-size: 14px;
-      }
-    }
-  
-    .logement .logement-title .host{
-      position: absolute;
-      top: 140px;
-      position: relative;
-      margin-bottom: 50px;
-  
-      img {
-        width: 32px;
-        height: 32px;
-      }
+  }
+
+  .collapse .collapse-content p{
+    font-size: 14px;
+  }
+
+  .logement .logement-collapses{
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 27px;
+    .collapse-content ul li{
+      font-size: 14px;
     }
   }
-  
+
+  .logement .logement-title .host{
+    position: absolute;
+    top: 140px;
+    position: relative;
+    margin-bottom: 50px;
+
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
