@@ -6,9 +6,6 @@
   width: 95%;
   margin-right: 2%;
   
-  
-    
-  
     .encadre-collapse h3 {
       color: white;
       background: $saumon;
@@ -19,49 +16,59 @@
       font-weight: 400;
       padding: 10px;
       width: 100%;
-       
     }
 
         .encadre-collapse{
             position: relative;
         }
     
-  
-  
-  .reglement {
-    
-    background-color: $gris;
+  .reglement{
+    background-color: $grisClair;
     color: $saumon;
     cursor: pointer;
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
     width: 100%;
     font-family: Montserrat;
-    font-size: var(small);
+    font-size: var(--small);
     font-weight: 400;
 }
 
-.fleche{
+.reglement ul{
+  padding:0px;
+  margin-top:0px;
+
+}
+
+.arrow-img{
     display: flex;
-    color: rgb(53, 8, 8);
+    color: white;
     width: 20px;
     height: 11px;
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateY(-50%);
     position: absolute;
     top: 50%;
     left: 97%; 
-    transform: translateY(-50%);
   }
-  .fleche.open img {
-    transform: rotate(180deg);
+
+  .arrow-img.open  {
+    transform: rotate(180deg) translateY(-50%);
   }
-  
-  
-  
-  
-  
-  
-  }
+
+
+  @media (max-width: 767.98px) {
+    .encadre-collapse h3{
+      font-size:13px;
+    }
+
+    .reglement{
+      font-size: 12px;
+    }
+
+    .reglement p{
+      font-size: 12px;
+    }
+  }}
   
  
 

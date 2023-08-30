@@ -13,8 +13,8 @@ function Collapse({ title, content }) {
     <div className="collapse">
       <div className="encadre-collapse" onClick={handleToggle}>
         <h3>{title}</h3>
-        <span className={`arrow ${isOpen ? "open" : "closed"}`}></span>
-        <img className="fleche"src={arrowImage} alt="Flèche" />
+        <span className={`arrow-span ${isOpen ? "open" : "closed"}`}></span>
+        <img className="arrow-img"src={arrowImage} alt="Flèche" />
       </div>
       {isOpen && (
         <div className="reglement">

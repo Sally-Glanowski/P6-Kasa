@@ -12,7 +12,7 @@ function Header() {
     <header>
       <div>
         <NavLink to="/kasa">
-          <img src={logo} alt="Logo Kasa" />
+          <img className="logo-header" src={logo} alt="Logo Kasa" />
         </NavLink>
       </div>
       <nav>
